@@ -108,7 +108,7 @@ export const connectAccount = (firstRun = false) =>
 
       "custom-binancechainwallet": {
         display: {
-          logo: "../../assets/binance-logo.svg",
+          logo: "/assets/binance-logo.svg",
           name: "Binance Chain Wallet",
           description: "Connect to your Binance Chain Wallet"
         },
