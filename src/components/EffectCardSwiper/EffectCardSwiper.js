@@ -22,7 +22,7 @@ const EffectCardSwiper = ({ items }) => {
                 className={styles.swiperButtonPrev}
             >
                 <Image
-                    src="../assets/icons/arrow-prev.svg"
+                    src="/paybymint/assets/icons/arrow-prev.svg"
                     alt="arrow-prev"
                     width={32}
                     height={24}
@@ -33,7 +33,7 @@ const EffectCardSwiper = ({ items }) => {
                 className={styles.swiperButtonNext}
             >
                 <Image
-                    src="../assets/icons/arrow-next.svg"
+                    src="/paybymint/assets/icons/arrow-next.svg"
                     alt="arrow-next"
                     width={32}
                     height={24}
