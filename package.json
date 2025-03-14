@@ -10,7 +10,7 @@
     "start:next": "next start",
     "lint": "next lint",
     "export": "next export",
-    "gh-pages-deploy": "next export && npx gh-pages -d out -b gh-pages"
+    "gh-pages-deploy": "next export && npx gh-pages -d out -b gh-pages" 
   },
   "engines": {
     "node": "16.x"
