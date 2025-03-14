@@ -121,7 +121,7 @@ export default function Header() {
                     <a
                       className="flex items-center text-lg md:text-2xl font-semibold"
                     >
-                      <Image src="../assets/logo.svg" alt="logo" width={48} height={40} />
+                      <Image src="/paybymint/assets/logo.svg" alt="logo" width={48} height={40} />
                       <div className="pl-3 z-50">PayByMint</div>
                     </a>
                   </Link>
