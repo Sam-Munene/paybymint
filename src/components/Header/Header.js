@@ -121,7 +121,7 @@ export default function Header() {
                     <a
                       className="flex items-center text-lg md:text-2xl font-semibold"
                     >
-                      <Image src="/assets/logo.svg" alt="logo" width={48} height={40} />
+                      <Image src="../assets/logo.svg" alt="logo" width={48} height={40} />
                       <div className="pl-3 z-50">PayByMint</div>
                     </a>
                   </Link>
@@ -189,10 +189,10 @@ export default function Header() {
               </Link>
             </Button> */}
                 <button className="btn-chain">
-                  {blockchain === 'Ethereum' && <img src="assets/icons/ethereum.svg" alt="" />}
-                  {blockchain === 'Binance' && <img src="assets/icons/bsc.svg" alt="" />}
-                  {blockchain === 'Tezos' && <img src="assets/icons/tezos.png" style={{ width: "28px", height: "28px" }} alt="" />}
-                  {blockchain === 'Flow' && <img src="assets/icons/flow.png" alt="" />}
+                  {blockchain === 'Ethereum' && <img src="../assets/icons/ethereum.svg" alt="" />}
+                  {blockchain === 'Binance' && <img src="../assets/icons/bsc.svg" alt="" />}
+                  {blockchain === 'Tezos' && <img src="../assets/icons/tezos.png" style={{ width: "28px", height: "28px" }} alt="" />}
+                  {blockchain === 'Flow' && <img src="../assets/icons/flow.png" alt="" />}
                   <span> <Link href="/pay-for-item"><a>{blockchain}</a></Link></span>
                 </button>
                 <Button

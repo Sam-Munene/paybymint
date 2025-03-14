@@ -88,17 +88,17 @@ const Home = () => {
   }, [provider, walletAddress])
 
   const trendingNfts = [
-    { title: 'The planted eyes', image: '/assets/nfts/trending1.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
-    { title: 'The planted eyes', image: '/assets/nfts/trending2.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
-    { title: 'The planted eyes', image: '/assets/nfts/trending3.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
-    { title: 'The planted eyes', image: '/assets/nfts/trending4.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/trending1.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/trending2.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/trending3.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/trending4.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
   ];
 
   const likeNfts = [
-    { title: 'The planted eyes', image: '/assets/nfts/like1.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
-    { title: 'The planted eyes', image: '/assets/nfts/like2.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
-    { title: 'The planted eyes', image: '/assets/nfts/like3.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
-    { title: 'The planted eyes', image: '/assets/nfts/like4.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/like1.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/like2.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/like3.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
+    { title: 'The planted eyes', image: '../assets/nfts/like4.png', userName: 'Amanda Ebubechukwu', avatarUrl: 'avatar1.png' },
   ];
 
   const aboutUs = [
@@ -286,12 +286,12 @@ const Home = () => {
 
       <section className='flex flex-col px-8 pt-24'>
         <div className='flex items-center mb-4'>
-          <Image src={'/assets/hot-collection.png'} alt="hot" width={53} height={53} />
+          <Image src={'../assets/hot-collection.png'} alt="hot" width={53} height={53} />
           <span className='ml-3 text-3xl font-bold text-rolling-stone'>Hot Deals</span>
         </div>
-        {/* <NavigationSwiper type="creator" titleImg={"/assets/recomend.png"} title="Recomended Creators" moreBtn="Discover More Creators" items={creatorItems} swiperClassName='w-full h-[320px]' /> */}
-        <NavigationSwiper type="nft" titleImg={"/assets/trending.png"} title="Trending NFTs" moreBtn="Discover More Trending NFTs" items={trendingNfts} swiperClassName='w-full h-[435px]' />
-        <NavigationSwiper type="nft" titleImg={"/assets/like.png"} title="Mostly liked NFTs" moreBtn="Discover Mostly Liked NFTs" items={likeNfts} swiperClassName='w-full h-[435px]' />
+        {/* <NavigationSwiper type="creator" titleImg={"../assets/recomend.png"} title="Recomended Creators" moreBtn="Discover More Creators" items={creatorItems} swiperClassName='w-full h-[320px]' /> */}
+        <NavigationSwiper type="nft" titleImg={"../assets/trending.png"} title="Trending NFTs" moreBtn="Discover More Trending NFTs" items={trendingNfts} swiperClassName='w-full h-[435px]' />
+        <NavigationSwiper type="nft" titleImg={"../assets/like.png"} title="Mostly liked NFTs" moreBtn="Discover Mostly Liked NFTs" items={likeNfts} swiperClassName='w-full h-[435px]' />
       </section>
 
       <section className='flex flex-col px-8 pt-24'>
@@ -314,11 +314,11 @@ const Home = () => {
           </div>
           <div className='bg-athens-gray rounded-[10px] flex-1 p-8'>
             <div className='flex mb-8 guide-question'>
-              <Image src={'/assets/question-mark.png'} alt="guide-question" width={32} height={32} />
+              <Image src={'../assets/question-mark.png'} alt="guide-question" width={32} height={32} />
               <span className='flex-1 text-black/[0.8] font-semibold text-2xl leading-7 ml-6'>How do I create a NFT?</span>
             </div>
             <div className='flex items-start guide-answer'>
-              <Image src={'/assets/robot.png'} alt="guide-answer" width={32} height={32} />
+              <Image src={'../assets/robot.png'} alt="guide-answer" width={32} height={32} />
               <span className='flex-1 text-black/[0.8] text-lg leading-7 ml-6'>Click [Create] and choose your file to upload. We currently support JPG, PNG, GIF, PDF, MP4, MP3, MPEG, AVI, WAV, and SVG. Please note that your NFT cannot be changed or revised once created. To create a revised/new NFT, you will have to start the process again.</span>
             </div>
           </div>
@@ -332,7 +332,7 @@ const Home = () => {
             aboutUs.map((item, idx) => (
               <div className='flex items-center justify-between px-8 py-9 bg-athens-gray rounded-[10px] w-full md:w-5/12' key={idx}>
                 <span className='text-2xl leading-7 text-black/[0.8]'>{item.title}</span>
-                <Image src={`/assets/${item.imgUrl}`} alt={`about-us-${idx}`} width={item.width} height={item.height} />
+                <Image src={`../assets/${item.imgUrl}`} alt={`about-us-${idx}`} width={item.width} height={item.height} />
               </div>
             ))
           }

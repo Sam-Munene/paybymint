@@ -6,7 +6,7 @@ const CreatorCard = ({ item, id, ...props }) => {
         <div {...props}>
             <div className='relative w-full h-32'>
                 <Image
-                    src={`/assets/creators/${item.bgUrl}`}
+                    src={`../assets/creators/${item.bgUrl}`}
                     alt={`bg-${id}`}
                     layout="fill"
                     objectFit="cover"
@@ -15,7 +15,7 @@ const CreatorCard = ({ item, id, ...props }) => {
             </div>
             <div className='flex flex-col items-center justify-center w-full -mt-[70px]'>
                 <Image
-                    src={`/assets/creators/${item.avatarUrl}`}
+                    src={`../assets/creators/${item.avatarUrl}`}
                     alt={`avatar-${id}`}
                     width={140}
                     height={140}

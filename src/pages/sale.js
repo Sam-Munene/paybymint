@@ -582,7 +582,7 @@ const BuyModal = ({
         </button>
         <h4 className="text-cape-cod font-medium mb-4">Total Bill</h4>
         <div className="bg-vermilion bg-opacity-20 rounded-[50%] p-4 w-28 mx-auto flex justify-center items-center">
-          <img width="60" src="/assets/dollar.svg" alt="dollar" />
+          <img width="60" src="../assets/dollar.svg" alt="dollar" />
         </div>
         <p className="text-shuttle-gray mt-5">Amount</p>
         <p className="flex items-center justify-center">
@@ -650,7 +650,7 @@ const UnlistModal = ({
         </button>
         <h4 className="text-cape-cod font-medium mb-4">Total Bill</h4>
         <div className="bg-vermilion bg-opacity-20 rounded-[50%] p-4 w-28 mx-auto flex justify-center items-center">
-          <img width="60" src="/assets/dollar.svg" alt="dollar" />
+          <img width="60" src="../assets/dollar.svg" alt="dollar" />
         </div>
         <p className="text-shuttle-gray mt-5">Amount</p>
         <p className="flex items-center justify-center">

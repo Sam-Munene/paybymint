@@ -24,7 +24,7 @@ const NftCard = ({ item, btnBuy, ...props }) => {
                     <div className='w-full flex justify-between'>
                         {/* <div className='flex'>
                             <Image
-                                src='/assets/avatars/avatar1.png'
+                                src='../assets/avatars/avatar1.png'
                                 alt="avatar"
                                 width={32}
                                 height={32}
